@@ -23,6 +23,7 @@
    cp .env.example .env
    php artisan key:generate
    php artisan migrate
+   php artisan db:seed --class=SourceSeeder
    php artisan scribe:generate --force
    php artisan serve
 ```
